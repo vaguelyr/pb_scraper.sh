@@ -10,6 +10,7 @@ wget(){
 	waituntil 5 1>&2  # pastebin likes to ip ban you if you go too fast
 }
 
+# we spend most of the time waiting so here's a nice animation for it 
 waituntil(){
 	echo 
 	for a in $(seq $1) ; do echo -ne "\rwaiting $a/$1" ; sleep 1s; done
